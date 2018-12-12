@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import BeerSelector from '../components/BeerSelector.js'
+import BeerDetail from '../components/BeerDetail.js';
 
 
 class PubContainer extends React.Component {
@@ -36,19 +37,13 @@ handleBeerSelected(index){
   // 4. Render() => BeerSelector / BeerDetail
   render(){
     return(
-      <div>
+      <>
         <h2>Choose your Beer!!!</h2>
         <BeerSelector beers={this.state.beers} onBeerSelected={this.handleBeerSelected}/>
-
-      </div>
+        <BeerDetail beer= {this.state.currentBeer}/>
+      </>
     )
   }
-
-
-
-
-
-
 
 }
 

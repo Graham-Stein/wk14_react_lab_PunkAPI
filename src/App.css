@@ -1,3 +1,65 @@
+h2 {
+  position: absolute;
+  left: 35vw;
+  top: 8vh;
+
+}
+#beer-selector {
+  position: absolute;
+  left: 35vw;
+  top: 20vh;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  #bigDiv {
+    font-family: Futura;
+    display: flex;
+    min-height: 20vh;
+    flex-direction: column;
+    margin: 10vh;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 2;
+    order: 1;
+  }
+  #main > select,
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > select {
+    background: #D7E8D4;
+    order: 3;
+  }
+
+
+  #main > aside > img {
+    height: 200px;
+  }
+
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+      text-transform: uppercase;
+    background: yellowgreen;
+    height: 7vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+
+
+
+
+
+
 .App {
   text-align: center;
 }
